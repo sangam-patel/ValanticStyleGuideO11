@@ -1,0 +1,123 @@
+:root {
+  /*! Typography - Size */
+  @each $i, $value in $theme-typography-sizes {
+    --font-size-#{$i}: #{px-to-rem($value)};
+  }
+
+  /*! Typography - Weight */
+  @each $i, $value in $theme-typography-weights {
+    --font-#{$i}: #{$value};
+  }
+
+  /*! Typography - Family */
+  --font-family: #{$font-family};
+
+  /*! Color - Brand */
+  @each $i, $value in $theme-brand-colors {
+    --color-#{$i}: #{$value};
+  }
+
+  /*! Color - Accessibility */
+  @each $i, $value in $theme-accessibility-colors {
+    --color-focus-#{$i}: #{$value};
+  }
+
+  /*! Color - Neutral */
+  @each $i, $value in $theme-neutral-colors {
+    --color-neutral-#{$i}: #{$value};
+  }
+
+  /*! Color - Extended */
+  @each $i, $value in $theme-red-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-violet-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-pink-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-orange-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-yellow-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-lime-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-green-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-teal-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-cyan-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-blue-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-indigo-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-grape-colors {
+    --color-#{$i}: #{$value};
+  }
+
+  /*! Color - Semantic */
+  @each $i, $value in $theme-error-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-warning-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-success-colors {
+    --color-#{$i}: #{$value};
+  }
+  @each $i, $value in $theme-info-colors {
+    --color-#{$i}: #{$value};
+  }
+
+  /*! Overlays */
+  @each $i, $value in $theme-overlays {
+    --overlay-#{$i}: #{$value};
+  }
+
+  /*! Space - Sizes */
+  @each $i, $value in $theme-spaces {
+    --space-#{$i}: #{px-to-rem($value)};
+  }
+
+  /*! Border Radius */
+  @each $i, $value in $theme-border-radius {
+    --border-radius-#{$i}: #{$value};
+  }
+
+  /*! Border Size */
+  @each $i, $value in $theme-border-size {
+    --border-size-#{$i}: #{$value};
+  }
+
+  /*! Elevation / Shadow */
+  @each $i, $value in $theme-shadows {
+    --shadow-#{$i}: #{$value};
+  }
+
+  /*! App Settings */
+  --header-color: #{$header-color};
+  --color-background-body: #{$color-background-body};
+  --color-background-login: #{$color-background-login};
+  --header-size: #{$header-size};
+  --header-size-content: #{$header-size-content};
+  --bottom-bar-size: #{$bottom-bar-size};
+  --footer-height: #{$footer-height};
+  --map-toolbar-height: #{$map-toolbar-height};
+  /*! Set the StatusBar variable that will be overwritten when it will be enable due to miss calculations! */
+  --status-bar-height: #{$status-bar-height};
+  /*! iOS Safe Areas (Notch Support) */
+  --os-safe-area-top: #{$os-safe-area-top};
+  --os-safe-area-right: #{$os-safe-area-right};
+  --os-safe-area-bottom: #{$os-safe-area-bottom};
+  --os-safe-area-left: #{$os-safe-area-left};
+}

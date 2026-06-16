@@ -1,0 +1,19 @@
+#!/bin/sh
+# Block commits if the CSS review tool finds errors in dist/theme.css.
+
+echo "Running CSS review on dist/theme.css..."
+
+if [ ! -f dist/theme.css ]; then
+  echo "ERROR: dist/theme.css not found. Run 'npm run build' first."
+  exit 1
+fi
+
+npm run review --silent
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "Commit blocked: CSS review found errors. Fix them and try again."
+  echo "(To inspect details, run: npm run review)"
+  exit 1
+fi
+
+exit 0

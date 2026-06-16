@@ -1,0 +1,265 @@
+/*! Typography - Family */
+$font-family: "Flexo", Arial, sans-serif;
+
+/*! Typography - Size */
+$body-root-font-size: 16px;
+$body-font-size: 14px;
+$theme-typography-sizes: (
+  "h1": 32px,
+  "h2": 28px,
+  "h3": 26px,
+  "h4": 22px,
+  "h5": 20px,
+  "h6": 18px,
+  "display": 36px,
+  "base": 16px,
+  "s": 14px,
+  "xs": 12px,
+  "xxs": 11px,
+  "label": 11px,
+);
+
+/*! Typography - Weight */
+$theme-typography-weights: (
+  "light": 300,
+  "regular": 400,
+  "semi-bold": 600,
+  "bold": 700,
+);
+
+/*! Color - Brand */
+$theme-brand-colors: (
+  "primary": #e11b22,
+  "secondary": #101213,
+  "primary-hover": #f56e72,
+  "primary-selected": rgba(20, 110, 245, 0.12),
+  "primary-lightest":
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+);
+
+/*! Color - Accessibility */
+$theme-accessibility-colors: (
+  "outer": #ffd337,
+  "inner": var(--color-neutral-10),
+);
+
+/*! Color - Neutral */
+$color-transparent: transparent;
+$theme-neutral-colors: (
+  "0": #ffffff,
+  "1": #f8f9fa,
+  "2": #f1f3f5,
+  "3": #e9ecef,
+  "4": #dee2e6,
+  "5": #ced4da,
+  "6": #adb5bd,
+  "7": #6a7178,
+  "8": #4f575e,
+  "9": #272b30,
+  "10": #101213,
+);
+
+/*! Color - Extended */
+$theme-red-colors: (
+  "red-darkest": #6f1717,
+  "red-darker": #8d1d1d,
+  "red-dark": #ab2424,
+  "red": #c92a2a,
+  "red-light": #d96a6a,
+  "red-lighter": #e9aaaa,
+  "red-lightest": #faeaea,
+);
+
+$theme-violet-colors: (
+  "violet-darkest": #3e2880,
+  "violet-darker": #4e32a2,
+  "violet-dark": #5f3dc5,
+  "violet": #7048e8,
+  "violet-light": #9b7fef,
+  "violet-lighter": #c6b6f6,
+  "violet-lightest": #f1edfd,
+);
+
+$theme-pink-colors: (
+  "pink-darkest": #761c3b,
+  "pink-darker": #96244c,
+  "pink-dark": #b62b5c,
+  "pink": #d6336c,
+  "pink-light": #e27098,
+  "pink-lighter": #efadc4,
+  "pink-lightest": #fbebf0,
+);
+
+$theme-orange-colors: (
+  "orange-darkest": #883904,
+  "orange-darker": #ad4805,
+  "orange-dark": #d25806,
+  "orange": #f76707,
+  "orange-light": #f99551,
+  "orange-lighter": #fcc29c,
+  "orange-lightest": #fef0e6,
+);
+
+$theme-yellow-colors: (
+  "yellow-darkest": #875700,
+  "yellow-darker": #ac6f00,
+  "yellow-dark": #d08700,
+  "yellow": #f59f00,
+  "yellow-light": #f8bc4c,
+  "yellow-lighter": #fbd999,
+  "yellow-lightest": #fef5e5,
+);
+
+$theme-lime-colors: (
+  "lime-darkest": #40650c,
+  "lime-darker": #51810f,
+  "lime-dark": #639c13,
+  "lime": #74b816,
+  "lime-light": #9ecd5c,
+  "lime-lighter": #c7e3a2,
+  "lime-lightest": #f1f8e8,
+);
+
+$theme-green-colors: (
+  "green-darkest": #1e622a,
+  "green-darker": #267d36,
+  "green-dark": #2f9741,
+  "green": #37b24d,
+  "green-light": #73c982,
+  "green-lighter": #afe0b8,
+  "green-lightest": #ebf7ed,
+);
+
+$theme-teal-colors: (
+  "teal-darkest": #044632,
+  "teal-darker": #065940,
+  "teal-dark": #076c4d,
+  "teal": #087f5b,
+  "teal-light": #52a58c,
+  "teal-lighter": #9cccbd,
+  "teal-lightest": #e6f2ef,
+);
+
+$theme-cyan-colors: (
+  "cyan-darkest": #074650,
+  "cyan-darker": #095a66,
+  "cyan-dark": #0b6d7b,
+  "cyan": #0d8091,
+  "cyan-light": #56a6b2,
+  "cyan-lighter": #9eccd3,
+  "cyan-lightest": #e7f2f4,
+);
+
+$theme-blue-colors: (
+  "blue-darkest": #0e4370,
+  "blue-darker": #12558e,
+  "blue-dark": #1667ad,
+  "blue": #1a79cb,
+  "blue-light": #5fa1db,
+  "blue-lighter": #a3c9ea,
+  "blue-lightest": #e8f2fa,
+);
+
+$theme-indigo-colors: (
+  "indigo-darkest": #243681,
+  "indigo-darker": #2e45a5,
+  "indigo-dark": #3854c8,
+  "indigo": #4263eb,
+  "indigo-light": #7b92f1,
+  "indigo-lighter": #b3c1f7,
+  "indigo-lightest": #eceffd,
+);
+
+$theme-grape-colors: (
+  "grape-darkest": #60226f,
+  "grape-darker": #7a2b8d,
+  "grape-dark": #9435ab,
+  "grape": #ae3ec9,
+  "grape-light": #c678d9,
+  "grape-lighter": #dfb2e9,
+  "grape-lightest": #f7ecfa,
+);
+
+/*! Color - Semantic */
+$theme-error-colors: (
+  "error": #dc2020,
+  "error-light": #fceaea,
+);
+
+$theme-warning-colors: (
+  "warning": #e9a100,
+  "warning-light": #fdf6e5,
+);
+
+$theme-success-colors: (
+  "success": #29823b,
+  "success-light": #eaf3eb,
+);
+
+$theme-info-colors: (
+  "info": #017aad,
+  "info-light": #e5f5fc,
+);
+
+/*! Overlays */
+$theme-overlays: (
+  "background": rgba(0, 0, 0, 0.25),
+);
+
+/*! Space - Sizes */
+$theme-spaces: (
+  "none": 0,
+  "xs": 4px,
+  "s": 8px,
+  "base": 16px,
+  "m": 24px,
+  "l": 32px,
+  "xl": 40px,
+  "xxl": 48px,
+);
+
+/*! Border Radius */
+$theme-border-radius: (
+  "none": 0,
+  "soft": 4px,
+  "rounded": 100px,
+  "circle": 100%,
+);
+
+/*! Border Size */
+$theme-border-size: (
+  "none": 0,
+  "s": 1px,
+  "m": 2px,
+  "l": 3px,
+  "xl": 4px,
+);
+
+/*! Elevation / Shadow */
+$theme-shadows: (
+  "none": none,
+  "xs": 0 1px 2px rgba(0, 0, 0, 0.1),
+  "s": 0 2px 4px rgba(0, 0, 0, 0.1),
+  "m": 0 4px 6px rgba(0, 0, 0, 0.1),
+  "l": 0 6px 8px rgba(0, 0, 0, 0.1),
+  "xl": 0 8px 10px rgba(0, 0, 0, 0.1),
+);
+
+/*! App Settings */
+$header-color: var(--color-neutral-10);
+$color-background-body: #f5f5f5;
+$color-background-login: var(--color-neutral-10);
+$header-size: 56px;
+$header-size-content: 48px;
+$side-menu-size: 300px;
+$bottom-bar-size: 57px;
+$footer-height: 0px;
+$map-toolbar-height: 41px;
+$side-menu-width: 400px;
+/*! Set the StatusBar variable that will be overwritten when it will be enable due to miss calculations! */
+$status-bar-height: 0px;
+// iOS Safe Areas (Notch Support)
+$os-safe-area-top: env(safe-area-inset-top);
+$os-safe-area-right: env(safe-area-inset-right);
+$os-safe-area-bottom: env(safe-area-inset-bottom);
+$os-safe-area-left: env(safe-area-inset-left);

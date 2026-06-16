@@ -1,0 +1,68 @@
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
+/*  $2 - HTML Elements                                                   */
+/*       $2.1 - HTML Elements - Links                                    */
+/*       $2.2 - HTML Elements - Images                                   */
+/*       $2.3 - HTML Elements - Headings                                 */
+/*       $2.4 - HTML Elements - Inputs and Selectors                     */
+/*       $2.5 - HTML Elements - Buttons                                  */
+/*  $3 - Page Layout                                                     */
+/*       $3.1 - Page Layout - Header                                     */
+/*       $3.2 - Page Layout - Menu                                       */
+/*       $3.3 - Page Layout - Content                                    */
+/*       $3.4 - Page Layout - Login                                      */
+/*  $4 - Patterns                                                        */
+/*       $4.1 - Patterns - Adaptive                                      */
+/*       $4.2 - Patterns - Content                                       */
+/*       $4.3 - Patterns - Interaction                                   */
+/*       $4.4 - Patterns - Navigation                                    */
+/*       $4.5 - Patterns - Numbers                                       */
+/*       $4.6 - Patterns - Utilities                                     */
+/*  $5 - Widgets                                                         */
+/*  $6 - Themes                                                          */
+/* ===================================================================== */
+/* ===================================================================== */
+
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/* ===================================================================== */
+@import "1-abstract/variables";
+@import "1-abstract/functions";
+@import "1-abstract/root";
+@import "1-abstract/dark-theme";
+
+/* ===================================================================== */
+/*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
+/* ===================================================================== */
+
+/* ===================================================================== */
+/*  $2 - HTML Elements                                                   */
+/* ===================================================================== */
+
+@import "2-base/typography";
+@import "2-base/icons";
+
+/* ===================================================================== */
+/*  $3 - Page Layout                                                     */
+/* ===================================================================== */
+
+@import "3-layout/main-import-layout";
+
+/* ===================================================================== */
+/*  $4 - Patterns                                                        */
+/* ===================================================================== */
+
+@import "4-patterns/outsystems-ui/osui_import";
+@import "4-patterns/custom/main-import-custom-patterns";
+
+/* ===================================================================== */
+/*  $5 - Widgets                                                         */
+/* ===================================================================== */
+
+@import "5-widgets/outsystems-ui/main-import-osui-widgets";
+
+/* ===================================================================== */
+/*  $6 - Useful classes                                                  */
+/* ===================================================================== */
+@import "6-useful-classes/useful-classes";

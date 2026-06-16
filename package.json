@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "sass src/theme.scss dist/theme.css && npm run review",
+    "build:only": "sass src/theme.scss dist/theme.css",
+    "watch": "concurrently \"sass --watch src/theme.scss dist/theme.css\" \"chokidar dist/theme.css -c 'npm run review'\"",
+    "review": "css-review dist/theme.css",
+    "review:json": "css-review dist/theme.css --json",
+    "prepare": "git config core.hooksPath .githooks"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^8.2.0",
+    "prettier": "2.8.4",
+    "vlcs-outsystems-css-code-review": "github:doitleanlabs/vLCSCodeReview#master"
+  }
+}
