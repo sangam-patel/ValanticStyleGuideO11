@@ -8,7 +8,9 @@
   flex-direction: column;
   justify-content: center;
   transition: box-shadow 0.25s ease-out;
-
+   &:hover {
+    box-shadow: 0 7px 21px #1a1b1f3b;
+  }
   .overview-card__icon {
     display: flex;
     flex-direction: column;
@@ -26,4 +28,10 @@
     height: 100%;
   }
 
+}
+
+.OSBlockWidget-contents {
+  > .OSBlockWidget {
+    display: contents;
+  }
 }
