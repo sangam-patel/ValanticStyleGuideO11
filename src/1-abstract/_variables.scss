@@ -1,5 +1,5 @@
 /*! Typography - Family */
-$font-family: "Flexo", Arial, sans-serif;
+$font-family: Maven Pro;
 
 /*! Typography - Size */
 $body-root-font-size: 16px;
@@ -24,6 +24,7 @@ $theme-typography-weights: (
   "light": 300,
   "regular": 400,
   "semi-bold": 600,
+  "medium": 500,
   "bold": 700,
 );
 
@@ -246,10 +247,10 @@ $theme-shadows: (
 );
 
 /*! App Settings */
-$header-color: var(--color-neutral-10);
+$header-color: var(--color-neutral-0);
 $color-background-body: #f5f5f5;
 $color-background-login: var(--color-neutral-10);
-$header-size: 56px;
+$header-size: 71px;
 $header-size-content: 48px;
 $side-menu-size: 300px;
 $bottom-bar-size: 57px;
@@ -263,3 +264,7 @@ $os-safe-area-top: env(safe-area-inset-top);
 $os-safe-area-right: env(safe-area-inset-right);
 $os-safe-area-bottom: env(safe-area-inset-bottom);
 $os-safe-area-left: env(safe-area-inset-left);
+$text-gradient-primary: linear-gradient(63.1deg, #FF4B4B 0%, #FF744F 100%);
+$color-valantic-black: #0F0C28;
+$color-border: #E5E7EB;
+$color-light: #6B7280;

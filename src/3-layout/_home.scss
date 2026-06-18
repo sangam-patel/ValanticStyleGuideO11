@@ -1,0 +1,44 @@
+.home-banner {
+  padding-top: 80px;
+  padding-bottom: 122px;
+  background: var(--color-valantic-black);
+
+  .ThemeGrid_Container {
+    max-width: 980px;
+  }
+
+  .font-size-display {
+    --font-size-display: 50px;
+  }
+
+}
+.home-menu {
+  margin-top: -70px;
+
+  .ThemeGrid_Container {
+    max-width: 980px;
+  }
+}
+
+.home-padding {
+    padding: 87px 0 30px;
+
+    .ThemeGrid_Container {
+      max-width: 980px;
+    }
+}
+
+.home-card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 1px 6px #00000029;
+}
+
+.home-footer {
+    padding: 55px 0 30px;
+    border-top: 1px solid var(--color-border);
+
+    .ThemeGrid_Container {
+      max-width: 980px;
+    }
+}

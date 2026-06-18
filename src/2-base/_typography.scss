@@ -5,3 +5,27 @@ html,
 body {
   font-family: var(--font-family);
 }
+
+a {
+  &:link,
+  &:visited {
+    color: var(--color-primary-darker);
+  }
+}
+
+.font-medium {
+    font-weight: var(--font-medium);
+}
+
+.text-light {
+    color: var(--color-light);
+}
+
+.text-shadow-s {
+    text-shadow: var(--shadow-s);
+}
+
+.text-gradient-primary {
+    background-image: var(--text-gradient-primary);
+    background-clip: text;
+}

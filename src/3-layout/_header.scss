@@ -1,0 +1,32 @@
+.header {
+  .header-content {
+    .app-menu-links {
+      gap: var(--space-base);
+
+      .osui-submenu {
+        &__header {
+          &__item {
+            font-size: var(--font-size-h6);
+            font-weight: var(--font-medium);
+
+            a {
+              color: var(--text-color-neutral-8, var(--color-neutral-8));
+            }
+          }
+        }
+
+        &.active {
+          .osui-submenu__header__item {
+            &,
+            a {
+              background-image: var(--text-gradient-primary);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

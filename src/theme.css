@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
+/*  $2 - HTML Elements                                                   */
+/*       $2.1 - HTML Elements - Links                                    */
+/*       $2.2 - HTML Elements - Images                                   */
+/*       $2.3 - HTML Elements - Headings                                 */
+/*       $2.4 - HTML Elements - Inputs and Selectors                     */
+/*       $2.5 - HTML Elements - Buttons                                  */
+/*  $3 - Page Layout                                                     */
+/*       $3.1 - Page Layout - Header                                     */
+/*       $3.2 - Page Layout - Menu                                       */
+/*       $3.3 - Page Layout - Content                                    */
+/*       $3.4 - Page Layout - Login                                      */
+/*  $4 - Patterns                                                        */
+/*       $4.1 - Patterns - Adaptive                                      */
+/*       $4.2 - Patterns - Content                                       */
+/*       $4.3 - Patterns - Interaction                                   */
+/*       $4.4 - Patterns - Navigation                                    */
+/*       $4.5 - Patterns - Numbers                                       */
+/*       $4.6 - Patterns - Utilities                                     */
+/*  $5 - Widgets                                                         */
+/*  $6 - Themes                                                          */
+/* ===================================================================== */
+/* ===================================================================== */
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/* ===================================================================== */
+/*! Typography - Family */
+/*! Typography - Size */
+/*! Typography - Weight */
+/*! Color - Brand */
+/*! Color - Accessibility */
+/*! Color - Neutral */
+/*! Color - Extended */
+/*! Color - Semantic */
+/*! Overlays */
+/*! Space - Sizes */
+/*! Border Radius */
+/*! Border Size */
+/*! Elevation / Shadow */
+/*! App Settings */
+/*! Set the StatusBar variable that will be overwritten when it will be enable due to miss calculations! */
+:root {
+  /*! Typography - Size */
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.75rem;
+  --font-size-h3: 1.625rem;
+  --font-size-h4: 1.375rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1.125rem;
+  --font-size-display: 2.25rem;
+  --font-size-base: 1rem;
+  --font-size-s: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-xxs: 0.6875rem;
+  --font-size-label: 0.6875rem;
+  /*! Typography - Weight */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-medium: 500;
+  --font-bold: 700;
+  /*! Typography - Family */
+  --font-family: Maven Pro;
+  /*! Color - Brand */
+  --color-primary: #e11b22;
+  --color-secondary: #101213;
+  --color-primary-hover: #f56e72;
+  --color-primary-selected: rgba(20, 110, 245, 0.12);
+  --color-primary-lightest: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  /*! Color - Accessibility */
+  --color-focus-outer: #ffd337;
+  --color-focus-inner: var(--color-neutral-10);
+  /*! Color - Neutral */
+  --color-neutral-0: #ffffff;
+  --color-neutral-1: #f8f9fa;
+  --color-neutral-2: #f1f3f5;
+  --color-neutral-3: #e9ecef;
+  --color-neutral-4: #dee2e6;
+  --color-neutral-5: #ced4da;
+  --color-neutral-6: #adb5bd;
+  --color-neutral-7: #6a7178;
+  --color-neutral-8: #4f575e;
+  --color-neutral-9: #272b30;
+  --color-neutral-10: #101213;
+  /*! Color - Extended */
+  --color-red-darkest: #6f1717;
+  --color-red-darker: #8d1d1d;
+  --color-red-dark: #ab2424;
+  --color-red: #c92a2a;
+  --color-red-light: #d96a6a;
+  --color-red-lighter: #e9aaaa;
+  --color-red-lightest: #faeaea;
+  --color-violet-darkest: #3e2880;
+  --color-violet-darker: #4e32a2;
+  --color-violet-dark: #5f3dc5;
+  --color-violet: #7048e8;
+  --color-violet-light: #9b7fef;
+  --color-violet-lighter: #c6b6f6;
+  --color-violet-lightest: #f1edfd;
+  --color-pink-darkest: #761c3b;
+  --color-pink-darker: #96244c;
+  --color-pink-dark: #b62b5c;
+  --color-pink: #d6336c;
+  --color-pink-light: #e27098;
+  --color-pink-lighter: #efadc4;
+  --color-pink-lightest: #fbebf0;
+  --color-orange-darkest: #883904;
+  --color-orange-darker: #ad4805;
+  --color-orange-dark: #d25806;
+  --color-orange: #f76707;
+  --color-orange-light: #f99551;
+  --color-orange-lighter: #fcc29c;
+  --color-orange-lightest: #fef0e6;
+  --color-yellow-darkest: #875700;
+  --color-yellow-darker: #ac6f00;
+  --color-yellow-dark: #d08700;
+  --color-yellow: #f59f00;
+  --color-yellow-light: #f8bc4c;
+  --color-yellow-lighter: #fbd999;
+  --color-yellow-lightest: #fef5e5;
+  --color-lime-darkest: #40650c;
+  --color-lime-darker: #51810f;
+  --color-lime-dark: #639c13;
+  --color-lime: #74b816;
+  --color-lime-light: #9ecd5c;
+  --color-lime-lighter: #c7e3a2;
+  --color-lime-lightest: #f1f8e8;
+  --color-green-darkest: #1e622a;
+  --color-green-darker: #267d36;
+  --color-green-dark: #2f9741;
+  --color-green: #37b24d;
+  --color-green-light: #73c982;
+  --color-green-lighter: #afe0b8;
+  --color-green-lightest: #ebf7ed;
+  --color-teal-darkest: #044632;
+  --color-teal-darker: #065940;
+  --color-teal-dark: #076c4d;
+  --color-teal: #087f5b;
+  --color-teal-light: #52a58c;
+  --color-teal-lighter: #9cccbd;
+  --color-teal-lightest: #e6f2ef;
+  --color-cyan-darkest: #074650;
+  --color-cyan-darker: #095a66;
+  --color-cyan-dark: #0b6d7b;
+  --color-cyan: #0d8091;
+  --color-cyan-light: #56a6b2;
+  --color-cyan-lighter: #9eccd3;
+  --color-cyan-lightest: #e7f2f4;
+  --color-blue-darkest: #0e4370;
+  --color-blue-darker: #12558e;
+  --color-blue-dark: #1667ad;
+  --color-blue: #1a79cb;
+  --color-blue-light: #5fa1db;
+  --color-blue-lighter: #a3c9ea;
+  --color-blue-lightest: #e8f2fa;
+  --color-indigo-darkest: #243681;
+  --color-indigo-darker: #2e45a5;
+  --color-indigo-dark: #3854c8;
+  --color-indigo: #4263eb;
+  --color-indigo-light: #7b92f1;
+  --color-indigo-lighter: #b3c1f7;
+  --color-indigo-lightest: #eceffd;
+  --color-grape-darkest: #60226f;
+  --color-grape-darker: #7a2b8d;
+  --color-grape-dark: #9435ab;
+  --color-grape: #ae3ec9;
+  --color-grape-light: #c678d9;
+  --color-grape-lighter: #dfb2e9;
+  --color-grape-lightest: #f7ecfa;
+  /*! Color - Semantic */
+  --color-error: #dc2020;
+  --color-error-light: #fceaea;
+  --color-warning: #e9a100;
+  --color-warning-light: #fdf6e5;
+  --color-success: #29823b;
+  --color-success-light: #eaf3eb;
+  --color-info: #017aad;
+  --color-info-light: #e5f5fc;
+  /*! Overlays */
+  --overlay-background: rgba(0, 0, 0, 0.25);
+  /*! Space - Sizes */
+  --space-none: 0rem;
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-base: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 2.5rem;
+  --space-xxl: 3rem;
+  /*! Border Radius */
+  --border-radius-none: 0;
+  --border-radius-soft: 4px;
+  --border-radius-rounded: 100px;
+  --border-radius-circle: 100%;
+  /*! Border Size */
+  --border-size-none: 0;
+  --border-size-s: 1px;
+  --border-size-m: 2px;
+  --border-size-l: 3px;
+  --border-size-xl: 4px;
+  /*! Elevation / Shadow */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-s: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-m: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-l: 0 6px 8px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 8px 10px rgba(0, 0, 0, 0.1);
+  /*! App Settings */
+  --header-color: var(--color-neutral-0);
+  --color-background-body: #f5f5f5;
+  --color-background-login: var(--color-neutral-10);
+  --header-size: 71px;
+  --header-size-content: 48px;
+  --bottom-bar-size: 57px;
+  --footer-height: 0px;
+  --map-toolbar-height: 41px;
+  /*! Set the StatusBar variable that will be overwritten when it will be enable due to miss calculations! */
+  --status-bar-height: 0px;
+  /*! iOS Safe Areas (Notch Support) */
+  --os-safe-area-top: env(safe-area-inset-top);
+  --os-safe-area-right: env(safe-area-inset-right);
+  --os-safe-area-bottom: env(safe-area-inset-bottom);
+  --os-safe-area-left: env(safe-area-inset-left);
+  --text-gradient-primary: linear-gradient(63.1deg, #FF4B4B 0%, #FF744F 100%);
+  --color-valantic-black: #0F0C28;
+  --color-border: #E5E7EB;
+  --color-light: {$color-light};
+}
+
+/* ===================================================================== */
+/*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
+/* ===================================================================== */
+/* ===================================================================== */
+/*  $2 - HTML Elements                                                   */
+/* ===================================================================== */
+/*  Font Import  */
+/*  Font Definition ********** */
+html,
+body {
+  font-family: var(--font-family);
+}
+
+a:link, a:visited {
+  color: var(--color-primary-darker);
+}
+
+.font-medium {
+  font-weight: var(--font-medium);
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.text-shadow-s {
+  text-shadow: var(--shadow-s);
+}
+
+.text-gradient-primary {
+  background-image: var(--text-gradient-primary);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+/* ===================================================================== */
+/*  $3 - Page Layout                                                     */
+/* ===================================================================== */
+/* ===================================================================== */
+/*  $3.1 - Page layout Header                                            */
+/* ===================================================================== */
+.header .header-content .app-menu-links {
+  gap: var(--space-base);
+}
+.header .header-content .app-menu-links .osui-submenu__header__item {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-medium);
+}
+.header .header-content .app-menu-links .osui-submenu__header__item a {
+  color: var(--text-color-neutral-8, var(--color-neutral-8));
+}
+.header .header-content .app-menu-links .osui-submenu.active .osui-submenu__header__item,
+.header .header-content .app-menu-links .osui-submenu.active .osui-submenu__header__item a {
+  background-image: var(--text-gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===================================================================== */
+/*  $3.2 - Page layout Aside                                     */
+/* ===================================================================== */
+.layout-side .aside-navigation__content {
+  background-color: var(--color-neutral-1);
+  bottom: 0;
+  height: auto;
+  position: fixed;
+  top: 0;
+  width: var(--side-menu-size);
+  z-index: 10;
+  border-right: 1px solid var(--color-neutral-3);
+}
+.layout-side .aside-navigation__content .side-navigation {
+  position: sticky;
+  top: calc(var(--header-size) + var(--space-xl));
+  display: block;
+  height: calc(100vh - 140px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: var(--space-l);
+  padding-left: var(--space-m);
+  margin-right: var(--space-base);
+  padding-right: var(--space-m);
+}
+.layout-side .aside-navigation__content .side-navigation .osui-accordion-item {
+  margin-bottom: var(--space-s);
+  background-color: transparent;
+  border: 0;
+}
+.layout-side .aside-navigation__content .side-navigation .osui-accordion-item--is-open:after {
+  border-color: transparent;
+}
+.layout-side .aside-navigation__content .side-navigation .osui-accordion-item.remove-icon .osui-accordion-item__icon {
+  opacity: 0;
+}
+.layout-side .aside-navigation__content .side-navigation .osui-accordion-item__title {
+  font-size: var(--font-size-base);
+  padding: var(--space-none);
+  padding-bottom: var(--space-s);
+}
+.layout-side .aside-navigation__content .side-navigation .osui-accordion-item__content, .layout-side .aside-navigation__content .side-navigation .osui-accordion-item__content--is-expanded {
+  padding: var(--space-none) var(--space-base) var(--space-s);
+}
+.layout-side .aside-navigation__content .side-navigation .osui-accordion-item__icon {
+  color: var(--color-neutral-7);
+}
+.layout-side .aside-navigation__content .side-navigation a,
+.layout-side .aside-navigation__content .side-navigation a:visited {
+  color: var(--color-neutral-9);
+  display: flex;
+  margin-bottom: var(--space-s);
+}
+.layout-side .aside-navigation__content .side-navigation a .icons,
+.layout-side .aside-navigation__content .side-navigation a:visited .icons {
+  color: var(--color-neutral-7);
+}
+.layout-side .aside-navigation__content .side-navigation a.active,
+.layout-side .aside-navigation__content .side-navigation a:visited.active {
+  color: var(--color-primary);
+  font-weight: var(--font-semi-bold);
+}
+.layout-side .aside-navigation__content .side-navigation a.active .icons,
+.layout-side .aside-navigation__content .side-navigation a:visited.active .icons {
+  color: var(--color-primary);
+}
+.layout-side .aside-navigation__content .side-navigation::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.layout-side .aside-navigation__content .side-navigation::-webkit-scrollbar-track {
+  background-color: var(--color-background-body);
+}
+.layout-side .aside-navigation__content .side-navigation::-webkit-scrollbar-thumb {
+  background-color: var(--color-background-body);
+  border-radius: 6px;
+}
+.layout-side .aside-navigation__content .side-navigation::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-neutral-2);
+}
+.layout-side .aside-navigation__content .side-navigation:hover::-webkit-scrollbar-track {
+  background-color: var(--color-background-body);
+}
+.layout-side .aside-navigation__content .side-navigation:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-5);
+}
+.layout-side .app-menu-links {
+  flex-direction: row;
+}
+
+.desktop .layout-side .app-menu-content {
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.desktop .layout-side .app-menu-links .osui-submenu .osui-submenu__header {
+  height: 100%;
+  border-left: var(--border-size-none);
+  border-bottom: var(--border-size-m) solid transparent;
+}
+.desktop .layout-side .app-menu-links .osui-submenu.active .osui-submenu__header, .desktop .layout-side .app-menu-links .osui-submenu:hover .osui-submenu__header {
+  border-bottom: var(--border-size-m) solid var(--color-primary);
+}
+.desktop .layout.layout-side .app-menu-links .osui-submenu {
+  height: 100%;
+}
+.desktop .layout.layout-side .header-navigation > .OSBlockWidget {
+  display: contents;
+}
+.desktop .layout.layout-side .header .application-name {
+  display: none;
+}
+
+/* ===================================================================== */
+/*  $3.3 - Page layout Home                                          */
+/* ===================================================================== */
+.home-banner {
+  padding-top: 80px;
+  padding-bottom: 122px;
+  background: var(--color-valantic-black);
+}
+.home-banner .ThemeGrid_Container {
+  max-width: 980px;
+}
+.home-banner .font-size-display {
+  --font-size-display: 50px;
+}
+
+.home-menu {
+  margin-top: -70px;
+}
+.home-menu .ThemeGrid_Container {
+  max-width: 980px;
+}
+
+.home-padding {
+  padding: 87px 0 30px;
+}
+.home-padding .ThemeGrid_Container {
+  max-width: 980px;
+}
+
+.home-card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.home-footer {
+  padding: 55px 0 30px;
+  border-top: 1px solid var(--color-border);
+}
+.home-footer .ThemeGrid_Container {
+  max-width: 980px;
+}
+
+/* ===================================================================== */
+/*  $4 - Patterns                                                        */
+/* ===================================================================== */
+/* Adaptive */
+/* Advanced */
+/* Content */
+/* Interaction */
+/* Navigation */
+/* Numbers */
+/* Utilities */
+/* ===================================================================== */
+/*  $4.1 - Pattern : Overview Card                                           */
+/* ===================================================================== */
+.overview-card {
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  box-shadow: var(--shadow-s);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.25s ease-out;
+}
+.overview-card .overview-card__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 150px;
+  width: 100%;
+  background-color: var(--color-neutral-2);
+  border-radius: 12px 12px var(--space-none) var(--space-none);
+}
+.overview-card .overview-card__info {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===================================================================== */
+/*  $5 - Widgets                                                         */
+/* ===================================================================== */
+/* ===================================================================== */
+/*  $6 - Useful classes                                                  */
+/* ===================================================================== *//*# sourceMappingURL=theme.css.map */
