@@ -1,0 +1,164 @@
+/* ===================================================================== */
+/*  $4.2.1 - Styles - Border                                               */
+/* ===================================================================== */
+
+.preview-border {
+  background-color: #b4d9f9;
+  height: 56px;
+  width: 112px;
+}
+
+.preview-border-circle {
+  width: 56px;
+}
+
+.preview-border-table {
+  background-color: #b4d9f9;
+  height: 24px;
+  width: 48px;
+}
+
+.preview-border-circle-table {
+  height: 48px;
+}
+
+.preview-border-size {
+  color: #b4d9f9;
+  height: 56px;
+  width: 56px;
+}
+
+.preview-border-size-table {
+  color: #b4d9f9;
+  height: 24px;
+  width: 24px;
+}
+
+/* ===================================================================== */
+/*  $4.2.2 - Styles - Color                                                */
+/* ===================================================================== */
+
+.preview-color-base {
+  align-items: center;
+  border-radius: var(--border-radius-soft);
+  display: flex;
+  height: 56px;
+  justify-content: center;
+
+  .preview-icon-color {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 180ms linear;
+    -servicestudio-opacity: 1;
+  }
+
+  &:hover {
+    .preview-icon-color {
+      opacity: 1;
+    }
+  }
+}
+
+.preview-color-variation {
+  border-radius: var(--border-radius-soft);
+  display: flex;
+  flex-direction: row;
+  height: 16px;
+  overflow: hidden;
+}
+
+.preview-color-item {
+  flex: 1;
+  height: 100%;
+}
+
+.preview-color-table {
+  border-radius: var(--border-radius-soft);
+  height: 24px;
+  width: 24px;
+}
+
+/* ===================================================================== */
+/*  $4.2.3 - Styles - Shadow                                               */
+/* ===================================================================== */
+.preview-shadow {
+    border-radius: var(--border-radius-soft);
+    height: 56px;
+    width: 56px;
+}
+
+/* ===================================================================== */
+/*  $4.2.4 - Styles - Spacing                                              */
+/* ===================================================================== */
+
+.preview-space-scale .columns-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+    -webkit-box-pack: end;
+       -ms-flex-pack: end;
+     justify-content: flex-end;
+}
+
+.preview-space {
+    background-color: #b4d9f9;
+}
+
+.preview-space-xs {
+    height: var(--space-xs);
+    width: var(--space-xs);
+}
+
+.preview-space-s {
+    height: var(--space-s);
+    width: var(--space-s);
+}
+
+.preview-space-base {
+    height: var(--space-base);
+    width: var(--space-base);
+}
+
+.preview-space-m {
+    height: var(--space-m);
+    width: var(--space-m);
+}
+
+.preview-space-l {
+    height: var(--space-l);
+    width: var(--space-l);
+}
+
+.preview-space-xl {
+    height: var(--space-xl);
+    width: var(--space-xl);
+}
+
+.preview-space-xxl {
+    height: var(--space-xxl);
+    width: var(--space-xxl);
+}
+
+.preview-space-uniform-mask {
+    background-color: #b4d9f9;
+}
+
+.preview-space-uniform {
+    border: 1px solid #adb5bd;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+}
+
+/* ===================================================================== */
+/*  $4.2.5 - Styles - Typography                                           */
+/* ===================================================================== */
+
+.preview-font-weight {
+    font-size: 56px;
+}

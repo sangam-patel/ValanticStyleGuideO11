@@ -271,6 +271,13 @@ a:link, a:visited {
 /* ===================================================================== */
 /*  $3.1 - Page layout Header                                            */
 /* ===================================================================== */
+.desktop .layout-top .ThemeGrid_Container {
+  max-width: 1280px;
+}
+
+/* ===================================================================== */
+/*  $3.2 - Page layout Header                                            */
+/* ===================================================================== */
 .header .header-content .app-menu-links {
   gap: var(--space-base);
 }
@@ -290,7 +297,7 @@ a:link, a:visited {
 }
 
 /* ===================================================================== */
-/*  $3.2 - Page layout Aside                                     */
+/*  $3.3 - Page layout Aside                                     */
 /* ===================================================================== */
 .layout-side .header .header-content .app-menu-links {
   gap: var(--space-none);
@@ -428,7 +435,7 @@ a:link, a:visited {
 }
 
 /* ===================================================================== */
-/*  $3.3 - Page layout Home                                          */
+/*  $3.4 - Page layout Home                                          */
 /* ===================================================================== */
 .home-banner {
   padding-top: 80px;
@@ -471,6 +478,93 @@ a:link, a:visited {
 }
 
 /* ===================================================================== */
+/*  $3.5 - Overview Pages Home                                          */
+/* ===================================================================== */
+.pattern-overview-preview {
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border: 1px solid #ebebeb;
+  display: flex;
+  height: 110px;
+  justify-content: center;
+  transition: box-shadow 250ms ease-out;
+}
+.pattern-overview-preview:hover {
+  box-shadow: 0 7px 21px 0 rgba(26, 27, 31, 0.23);
+}
+.pattern-overview-preview.styles {
+  height: 182px;
+}
+
+.screen-overview-preview {
+  border: 1px solid #ebebeb;
+  height: 166px;
+  padding: var(--space-s);
+  transition: box-shadow 250ms ease-out;
+}
+.screen-overview-preview:hover {
+  box-shadow: 0 7px 21px 0 rgba(26, 27, 31, 0.23);
+}
+.screen-overview-preview img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+}
+
+.table-header,
+.table-content-row {
+  border-bottom: 1px solid var(--color-neutral-4);
+}
+
+.table-content-row,
+.table-content-item {
+  display: flex;
+  align-items: center;
+}
+
+.tablet.portrait.portrait .hide-in-responsive, .tablet.portrait.landscape .hide-in-responsive,
+.phone.portrait .hide-in-responsive,
+.phone.landscape .hide-in-responsive {
+  display: none;
+}
+
+.tablet.portrait :not(.table-preview) .table-header,
+.phone.portrait :not(.table-preview) .table-header,
+.phone.landscape :not(.table-preview) .table-header {
+  display: flex;
+}
+.tablet.portrait .table-header .table-header-item,
+.phone.portrait .table-header .table-header-item,
+.phone.landscape .table-header .table-header-item {
+  flex: 1;
+}
+
+.tablet.portrait .table .table-header,
+.phone.portrait .table .table-header,
+.phone.landscape .table .table-header {
+  display: table-row;
+}
+
+.tablet.portrait .table-content-row .table-content-item {
+  flex: 1;
+}
+.tablet.portrait .bulk-actions .table-header {
+  display: table-row;
+}
+
+.phone .table-content-row .table-content-item {
+  flex: 1;
+}
+
+.css-preview {
+  color: #4120de;
+  font-family: monospace;
+}
+
+/* ===================================================================== */
 /*  $4 - Patterns                                                        */
 /* ===================================================================== */
 /* Adaptive */
@@ -481,7 +575,7 @@ a:link, a:visited {
 /* Numbers */
 /* Utilities */
 /* ===================================================================== */
-/*  $4.1 - Pattern : Pattern Preview                                          */
+/*  $4.1 - Pattern : Pattern Preview                                     */
 /* ===================================================================== */
 .pattern-preview {
   box-shadow: 0px 3px 8px rgba(10, 20, 30, 0.15);
@@ -919,7 +1013,160 @@ a:link, a:visited {
 }
 
 /* ===================================================================== */
-/*  $4.2 - Pattern : Overview Card                                           */
+/*  $4.2 - Pattern : Pattern Preview                                     */
+/* ===================================================================== */
+/* ===================================================================== */
+/*  $4.2.1 - Styles - Border                                               */
+/* ===================================================================== */
+.preview-border {
+  background-color: #b4d9f9;
+  height: 56px;
+  width: 112px;
+}
+
+.preview-border-circle {
+  width: 56px;
+}
+
+.preview-border-table {
+  background-color: #b4d9f9;
+  height: 24px;
+  width: 48px;
+}
+
+.preview-border-circle-table {
+  height: 48px;
+}
+
+.preview-border-size {
+  color: #b4d9f9;
+  height: 56px;
+  width: 56px;
+}
+
+.preview-border-size-table {
+  color: #b4d9f9;
+  height: 24px;
+  width: 24px;
+}
+
+/* ===================================================================== */
+/*  $4.2.2 - Styles - Color                                                */
+/* ===================================================================== */
+.preview-color-base {
+  align-items: center;
+  border-radius: var(--border-radius-soft);
+  display: flex;
+  height: 56px;
+  justify-content: center;
+}
+.preview-color-base .preview-icon-color {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 180ms linear;
+  -servicestudio-opacity: 1;
+}
+.preview-color-base:hover .preview-icon-color {
+  opacity: 1;
+}
+
+.preview-color-variation {
+  border-radius: var(--border-radius-soft);
+  display: flex;
+  flex-direction: row;
+  height: 16px;
+  overflow: hidden;
+}
+
+.preview-color-item {
+  flex: 1;
+  height: 100%;
+}
+
+.preview-color-table {
+  border-radius: var(--border-radius-soft);
+  height: 24px;
+  width: 24px;
+}
+
+/* ===================================================================== */
+/*  $4.2.3 - Styles - Shadow                                               */
+/* ===================================================================== */
+.preview-shadow {
+  border-radius: var(--border-radius-soft);
+  height: 56px;
+  width: 56px;
+}
+
+/* ===================================================================== */
+/*  $4.2.4 - Styles - Spacing                                              */
+/* ===================================================================== */
+.preview-space-scale .columns-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.preview-space {
+  background-color: #b4d9f9;
+}
+
+.preview-space-xs {
+  height: var(--space-xs);
+  width: var(--space-xs);
+}
+
+.preview-space-s {
+  height: var(--space-s);
+  width: var(--space-s);
+}
+
+.preview-space-base {
+  height: var(--space-base);
+  width: var(--space-base);
+}
+
+.preview-space-m {
+  height: var(--space-m);
+  width: var(--space-m);
+}
+
+.preview-space-l {
+  height: var(--space-l);
+  width: var(--space-l);
+}
+
+.preview-space-xl {
+  height: var(--space-xl);
+  width: var(--space-xl);
+}
+
+.preview-space-xxl {
+  height: var(--space-xxl);
+  width: var(--space-xxl);
+}
+
+.preview-space-uniform-mask {
+  background-color: #b4d9f9;
+}
+
+.preview-space-uniform {
+  border: 1px solid #adb5bd;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+}
+
+/* ===================================================================== */
+/*  $4.2.5 - Styles - Typography                                           */
+/* ===================================================================== */
+.preview-font-weight {
+  font-size: 56px;
+}
+
+/* ===================================================================== */
+/*  $4.3 - Pattern : Overview Card                                           */
 /* ===================================================================== */
 .overview-card {
   align-items: center;
