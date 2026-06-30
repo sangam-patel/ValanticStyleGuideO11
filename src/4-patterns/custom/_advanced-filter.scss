@@ -1,0 +1,65 @@
+.filters-wrapper {
+  background-color: var(--color-neutral-0);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-s);
+  padding: var(--space-m);
+
+  &.is--open {
+    .filters-button {
+      .btn {
+        background: var(--color-neutral-3);
+      }
+    }
+  }
+
+  .filters-content {
+    display: flex;
+    gap: var(--space-m);
+
+    .filters-search-input {
+      flex: 1;
+    }
+  }
+
+  .filters-expandable-content {
+    border-top: var(--border-size-s) solid transparent;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: var(--space-none) var(--space-m);
+
+    &.is--animating {
+      transition: all 300ms ease-in-out;
+    }
+
+    &.is--collapsed {
+      height: 0;
+
+      .advanced-filters-content {
+        opacity: 0;
+      }
+    }
+
+    &.is--expanded {
+      height: auto;
+      overflow: visible;
+      padding: var(--space-base) var(--space-none);
+      visibility: visible;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      .advanced-filters-content {
+        opacity: 1;
+      }
+    }
+
+    .advanced-filters-content {
+      opacity: 0;
+      padding-top: var(--space-base);
+      transition: opacity 300ms ease-in-out;
+    }
+  }
+}

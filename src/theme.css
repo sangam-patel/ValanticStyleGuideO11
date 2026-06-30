@@ -1203,6 +1203,99 @@ a:link, a:visited {
 }
 
 /* ===================================================================== */
+/*  $4.4 - Pattern : Advances Filter                                         */
+/* ===================================================================== */
+.filters-wrapper {
+  background-color: var(--color-neutral-0);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-s);
+  padding: var(--space-m);
+}
+.filters-wrapper.is--open .filters-button .btn {
+  background: var(--color-neutral-3);
+}
+.filters-wrapper .filters-content {
+  display: flex;
+  gap: var(--space-m);
+}
+.filters-wrapper .filters-content .filters-search-input {
+  flex: 1;
+}
+.filters-wrapper .filters-expandable-content {
+  border-top: var(--border-size-s) solid transparent;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: var(--space-none) var(--space-m);
+}
+.filters-wrapper .filters-expandable-content.is--animating {
+  transition: all 300ms ease-in-out;
+}
+.filters-wrapper .filters-expandable-content.is--collapsed {
+  height: 0;
+}
+.filters-wrapper .filters-expandable-content.is--collapsed .advanced-filters-content {
+  opacity: 0;
+}
+.filters-wrapper .filters-expandable-content.is--expanded {
+  height: auto;
+  overflow: visible;
+  padding: var(--space-base) var(--space-none);
+  visibility: visible;
+}
+.filters-wrapper .filters-expandable-content.is--expanded:focus {
+  box-shadow: none;
+}
+.filters-wrapper .filters-expandable-content.is--expanded .advanced-filters-content {
+  opacity: 1;
+}
+.filters-wrapper .filters-expandable-content .advanced-filters-content {
+  opacity: 0;
+  padding-top: var(--space-base);
+  transition: opacity 300ms ease-in-out;
+}
+
+/* ===================================================================== */
+/*  $4.5 - Pattern : Advances Filter Verticle                                   */
+/* ===================================================================== */
+.verticle-filter-wrapper {
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-neutral-0);
+  padding: var(--space-base);
+  box-shadow: var(--shadow-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item {
+  border-width: var(--space-none);
+  border-radius: var(--border-radius-none);
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__title {
+  padding: var(--space-base) var(--space-none);
+  font-weight: var(--font-medium);
+  font-size: var(--font-size-base);
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__title .osui-accordion-item__icon {
+  transition: none;
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__title .osui-accordion-item__icon--caret:after {
+  font-family: "valantic";
+  content: "\edaa";
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item.osui-accordion-item--is-open::after {
+  border-width: var(--space-none);
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item.osui-accordion-item--is-open .osui-accordion-item__title .osui-accordion-item__icon--caret:after {
+  content: "\ec42";
+}
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__content,
+.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__content.osui-accordion-item__content--is-expanded {
+  padding: var(--space-none);
+}
+
+/* ===================================================================== */
 /*  $5 - Widgets                                                         */
 /* ===================================================================== */
 /* ===================================================================== */
