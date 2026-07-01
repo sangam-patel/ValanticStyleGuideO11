@@ -1259,40 +1259,20 @@ a:link, a:visited {
 /* ===================================================================== */
 /*  $4.5 - Pattern : Advances Filter Verticle                                   */
 /* ===================================================================== */
-.verticle-filter-wrapper {
-  border-radius: var(--border-radius-medium);
+.aside-filter_header {
   background-color: var(--color-neutral-0);
-  padding: var(--space-base);
+  border-radius: var(--border-radius-medium);
   box-shadow: var(--shadow-s);
+  padding: var(--space-base);
   display: flex;
-  flex-direction: column;
   gap: var(--space-base);
+  margin-bottom: var(--space-m);
 }
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item {
-  border-width: var(--space-none);
-  border-radius: var(--border-radius-none);
+.aside-filter_header_search {
+  flex: 1;
 }
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__title {
-  padding: var(--space-base) var(--space-none);
-  font-weight: var(--font-medium);
-  font-size: var(--font-size-base);
-}
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__title .osui-accordion-item__icon {
-  transition: none;
-}
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__title .osui-accordion-item__icon--caret:after {
-  font-family: "valantic";
-  content: "\edaa";
-}
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item.osui-accordion-item--is-open::after {
-  border-width: var(--space-none);
-}
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item.osui-accordion-item--is-open .osui-accordion-item__title .osui-accordion-item__icon--caret:after {
-  content: "\ec42";
-}
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__content,
-.verticle-filter-wrapper .verticle-filter-wrapper_accordian .verticle-filter-wrapper_accordian__content .osui-accordion-item .osui-accordion-item__content.osui-accordion-item__content--is-expanded {
-  padding: var(--space-none);
+.phone .aside-filter_header {
+  flex-direction: column;
 }
 
 /* ===================================================================== */
